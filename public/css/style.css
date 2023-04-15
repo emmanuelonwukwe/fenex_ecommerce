@@ -1,0 +1,48 @@
+@import url("./responsive.css");
+
+nav .collapse.navbar-collapse {
+    padding: 5px;
+    background-color: gray;
+}
+
+nav .navbar-brand {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: aqua !important;
+    font-size: 18px;
+}
+nav .login-box{
+    background-color: transparent;
+    position: relative;;
+    left: 10%;
+    animation: fadeIn 2s linear 1;
+}
+
+.products-wrapper {
+    margin-top: 60px !important;
+}
+.offset-bar {
+    margin-top: 75px !important;
+}
+
+.products-wrapper .container .row .product {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid grey;
+    padding: 10px !important;
+    background: linear-gradient(to top,skyblue 4%, grey 50%, orange);
+    background: -webkit-linear-gradient(to top,skyblue 4%, grey 50%, orange);
+}
+
+.products-wrapper .container .row .product .cart-add-btn {
+    margin-left: 70%;
+}
+
+.products-wrapper .container .row .product a > img {
+    min-width: 100px;
+    max-width: 320px;
+    width: auto;
+    min-height: 100px;
+    max-height: 200px;
+    height: auto;
+} 
