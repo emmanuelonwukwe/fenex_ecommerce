@@ -19,6 +19,17 @@ php artisan serve
 ```sh
 php artisan migrate
 ```
+
+- Run this command to remove the storage folder and recreate the symbolic link of the storage folder to allow images to show when an admin uploads the image of a product. Else the image src will be invalid after creating a product
+
+```sh
+rm -r public/storage
+```
+Then
+
+```sh
+php artisan storage:link
+```
 - Go ahead to register your admin account 
 - Create categories of products on you admin end
 - create products on your admin end 

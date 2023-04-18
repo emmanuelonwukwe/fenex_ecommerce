@@ -34,6 +34,6 @@ class UserController extends Controller
         return view('account.dashboard')
         ->with('categories', app(CategoryController::class)->index())
         ->with('products', ProductController::index())
-        ->with('carts', CartController::index());
+        ->with('carts', (new CartController)->index());
     }
 }
